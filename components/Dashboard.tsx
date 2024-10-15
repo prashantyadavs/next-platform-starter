@@ -1,6 +1,6 @@
 // components/Dashboard.tsx
 import React from "react";
-import { TypewriterEffectSmoothDemo } from "@/components/SparklesPreview"; // Update the import
+import { TypewriterEffectSmoothDemo } from "./SparklesPreview"; // Update the import
 
 const Dashboard = () => {
   return (

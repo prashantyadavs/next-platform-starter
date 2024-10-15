@@ -1,25 +1,28 @@
 'use client';
 import './globals.css';
 import { SidebarDemo } from '../components/SidebarDemo';
-import { ReactNode } from 'react'; // Import ReactNode for typing
 import AdSense from '@/components/AdSense';
+import {Providers} from "./providers";
+import "./globals.css";
 
-interface RootLayoutProps {
-  children: ReactNode; // Define the type for the children prop
-}
 
-export default function RootLayout({ children }: RootLayoutProps) {
+
+export default function RootLayout({children}: { children: React.ReactNode }) {
   return (
     <html lang="en" className="dark">
-      <body className="flex h-screen"> {/* Flex layout for sidebar and content */}
-      <head>
+            <head>
         <AdSense pId="ca-pub-9112160833265609"/>
       </head>
+      <body className="flex h-screen"> {/* Flex layout for sidebar and content */}
+
         <div className="sidebar"> {/* Sidebar wrapper */}
           <SidebarDemo />
         </div>
         <div className="content"> {/* Content wrapper */}
+        <Providers>
+
           {children}
+          </Providers>
 
         </div>
       </body>

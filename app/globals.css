@@ -20,13 +20,15 @@
       /* You can add any other styles you want here */
   }
 }
-/* Add this CSS to your global styles or a module */
-.grid-background {
-  background-color: #000;
-  background-image: linear-gradient(0deg, rgba(58, 57, 57, 0.1) 1.5px, transparent 1px),
-                    linear-gradient(90deg, rgba(58, 57, 57, 0.1) 1.5px, transparent 1px);
-  background-size: 10px 10px; /* Adjust the size of the gridlines */
+/* custom.css */
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-neutral-900:is(.dark *){
+    
+      background-color: #111!important; /* Change this to your desired dark color */
+      /* You can add any other styles you want here */
+  }
 }
+
 
 /* Example of defining border color if you're not using CSS variables */
 .border-border {

@@ -27,18 +27,18 @@ export function SidebarDemo() {
         <IconBrandTabler className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
-    // {
-    //   label: "Profile",
-    //   href: "/profile", // Update this to point to the profile page
-    //   icon: <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />,
-    // },
-    // {
-    //   label: "Settings",
-    //   href: "/settings", // Set the correct path for Settings
-    //   icon: (
-    //     <IconSettings className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-    //   ),
-    // },
+    {
+     label: "Fno-market",
+     href: "/fnomarket", // Update this to point to the profile page
+    icon: <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />,
+    },
+    {
+      label: "Tradebook",
+     href: "/tradebook", // Set the correct path for Settings
+     icon: (
+      <IconSettings className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+    ),
+    },
     // {
     //   label: "Logout",
     //   href: "/logout", // Set the correct path for Logout

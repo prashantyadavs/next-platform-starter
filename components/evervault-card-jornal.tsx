@@ -1,5 +1,6 @@
 import React from "react";
 import { EvervaultCard, Icon } from "./ui/evervault-card";
+import Link from "next/link"; // Import Link from next/link
 
 export function EvervaultCardjournal() {
   return (
@@ -21,9 +22,11 @@ export function EvervaultCardjournal() {
 
 </h2>
 
-      <button className=" mt-3 bg-orange-600 hover:bg-orange-900 text-white py-1 px-4 rounded-full transition duration-300 ease-in-out">
-        Click me
-      </button>
+<Link href="/tradebook">
+        <button className="mt-3 bg-orange-600 hover:bg-orange-900 text-white py-1 px-4 rounded-full transition duration-300 ease-in-out">
+          Click me
+        </button>
+      </Link>
     </div>
   );
 }
